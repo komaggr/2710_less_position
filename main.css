@@ -1,0 +1,123 @@
+
+body {
+    margin: 0 auto;
+}
+
+header {
+    padding: 24px 16px;
+    position: fixed;
+    /*top: 0;
+    left: 0;
+    right: 0; same\|/*/
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+}
+
+header + * {
+    margin-top: 85px;
+}
+
+section {
+    padding: 96px 0;
+}
+
+footer {
+    padding: 80px;
+}
+
+.logo, nav {
+    display: inline-block;
+}
+
+.logo > a {
+    font-size: 32px;
+
+}
+
+.nav-link {
+    color: white;
+    font-family: "Arial";
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.bg-primary {
+    background-color: #18bc9c;
+}
+
+.bg-secondary {
+    background: #2c3e50;
+}
+
+.conteiner {
+    text-align: center;
+    font-size: 0;
+
+}
+
+nav {
+    float: right;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.main-nav {
+    margin: 0;
+    list-style: none;
+    /*padding: 10px 0 8px;*/
+}
+
+.main-nav > li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.main-nav .nav-link:hover,
+.main-nav .nav-link:focus {
+    color: #18bc9c;
+}
+
+.portfolio-item {
+    position: relative;
+    display: inline-block;
+    width: 33%;
+    font-size: 16px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.pi-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #18bc9c;
+    opacity: 0;
+}
+
+.portfolio-item:hover .pi-overlay,
+.portfolio-item:focus .pi-overlay {
+    opacity: .65;
+}
+
+.pi-overlay > .fa {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 16px;
+    font-size: 16px;
+    color: white;
+    margin: auto;
+}
